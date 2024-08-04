@@ -1,0 +1,60 @@
+:root{
+    --primary-clr : rgb(104,211,255);
+    --secondary-clr : rgba(249,101,91,1);
+}
+
+body{
+    background: var(--primary-clr);
+    background: linear-gradient(315deg, var(--primary-clr) 0%, var(--secondary-clr) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: 20% 10% 20% 10%;
+    padding: 1vmax;
+    width: 40vw;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    font-family: 'Space Mono', monospace;   
+}
+
+input[type = 'text']{
+    text-align: left;
+    border-radius: 5px;
+    color: black;
+    border: solid black 2px;
+    padding: .5vmax;
+    transition: 10ms;
+    margin-bottom: 2vmax;
+}
+
+input[type = 'checkbox'], button{
+    margin: 0 1rem 0 1rem;
+}
+
+button{
+    background: none;
+    border: black solid 2px;
+    border-radius: 4px;
+    font-size: x-small;
+    transition: 150ms;
+}
+
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
